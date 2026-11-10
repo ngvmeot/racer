@@ -6,8 +6,24 @@
     <title>Privacy Policy</title>
     <style>
         pre { 
-            white-space: pre-wrap; 
-            word-wrap: break-word; 
+            /* Моноширинный системный шрифт (стиль блокнота) */
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333333;
+    
+    /* Выравнивание и компактность */
+    text-align: left;
+    max-width: 680px;      /* Ограничиваем ширину, чтобы текст не разъезжался */
+    margin: 0 auto;       /* Центрируем сам блок <pre> на экране компьютера */
+    padding: 20px;        /* Внутренние отступы от краев экрана */
+    
+    /* Главное: заставляем текст переноситься на мобильных (убираем гор. скролл) */
+    white-space: pre-wrap;       /* CSS3 */
+    white-space: -moz-pre-wrap;  /* Mozilla */
+    white-space: -pre-wrap;      /* Opera 4-6 */
+    white-space: -o-pre-wrap;    /* Opera 7 */
+    word-wrap: break-word;       /* Старые браузеры */
         }
     </style>
 </head>
