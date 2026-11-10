@@ -5,38 +5,47 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
     <style>
-        body { 
-            /* Выравнивание текста strictly по левому краю */
-        text-align: left !important; 
-            /* Моноширинный системный шрифт (стиль блокнота) */
-        }
-        pre { 
-            /* Добавляем это свойство, чтобы заставить браузер правильно центрировать элемент */
-            display: block;
-            /* Выравнивание текста strictly по левому краю */
-        text-align: left !important; 
-            /* Моноширинный системный шрифт (стиль блокнота) */
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #333333;
-    
-    /* Выравнивание и компактность */
-    text-align: left;
-    max-width: 680px;      /* Ограничиваем ширину, чтобы текст не разъезжался */
-    margin: 0 auto;       /* Центрируем сам блок <pre> на экране компьютера */
-    padding: 20px;        /* Внутренние отступы от краев экрана */
-    
-    /* Главное: заставляем текст переноситься на мобильных (убираем гор. скролл) */
-    white-space: pre-wrap;       /* CSS3 */
-    white-space: -moz-pre-wrap;  /* Mozilla */
-    white-space: -pre-wrap;      /* Opera 4-6 */
-    white-space: -o-pre-wrap;    /* Opera 7 */
-    word-wrap: break-word;       /* Старые браузеры */
-        }
+        /* Сбрасываем центрирование для всей страницы, чтобы оно не ломало документ */
+    body {
+        margin: 0;
+        padding: 0;
+        text-align: left; 
+    }
+
+    /* Стиль для обертки, которая держит компактную колонку по центру экрана */
+    .privacy-container {
+        max-width: 680px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: left;
+    }
+
+    /* Стиль самого блокнотного текста */
+    pre { 
+        display: block;
+        margin: 0;
+        padding: 0;
+        
+        /* Моноширинный системный шрифт (стиль блокнота) */
+        font-family: 'Courier New', Courier, monospace;
+        font-size: 14px;
+        line-height: 1.5;
+        color: #333333;
+        
+        /* Четкое выравнивание текста по левому краю */
+        text-align: left; 
+        
+        /* Перенос строк для мобильных устройств */
+        white-space: pre-wrap;       
+        white-space: -moz-pre-wrap;  
+        white-space: -pre-wrap;      
+        white-space: -o-pre-wrap;    
+        word-wrap: break-word;       
+    }
     </style>
 </head>
 <body>
+<div class="privacy-container">
 <pre>
 PRIVACY POLICY FOR NGV RACER
 
@@ -133,5 +142,6 @@ Email: support@meot.me
 
 We will review your inquiry and respond as promptly as possible.
 </pre>
+</div>
 </body>
 </html>
