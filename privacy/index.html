@@ -4,44 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Privacy Policy</title>
+    <!-- Подключение Roboto Mono из Google Fonts -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        /* Сбрасываем центрирование для всей страницы, чтобы оно не ломало документ */
-    body {
-        margin: 0;
-        padding: 0;
-        text-align: left; 
-    }
+        html, body {
+    margin: 0;
+    padding: 0;
+}
+        div { 
 
-    /* Стиль для обертки, которая держит компактную колонку по центру экрана */
-    .privacy-container {
-        max-width: 680px;
-        margin: 0 auto;
-        padding: 20px;
-        text-align: left;
-    }
+            max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 16px 16px;
+    box-sizing: border-box;
+    white-space: pre-line;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+        }
+        /* Базовый вид двойной линии */
+hr {
+    border: none;
+    border-top: 3px double #212121;
+    width: 100%;
+}
 
-    /* Стиль самого блокнотного текста */
-    pre { 
-        display: block;
-        margin: 0;
-        padding: 0;
-        
-        /* Моноширинный системный шрифт (стиль блокнота) */
-        font-family: 'Courier New', Courier, monospace;
-        font-size: 14px;
-        line-height: 1.5;
-        color: #000000;
-        
-        /* Четкое выравнивание текста по левому краю */
-        text-align: left; 
-        
-        /* Перенос строк для мобильных устройств */
-        white-space: pre-wrap;       
-        white-space: -moz-pre-wrap;  
-        white-space: -pre-wrap;      
-        white-space: -o-pre-wrap;    
-        word-wrap: break-word;       
-    }
+/* 1. Отступ ТОЛЬКО внизу (верх, бока = 0, низ = 8px) */
+hr.line-top {
+    margin: 16px 0 8px 0;
+}
+
+/* 2. Отступ ТОЛЬКО вверху (верх = 8px, бока и низ = 0) */
+hr.line-bottom {
+    margin: 8px 0 8px 0;
+}
     </style>
 </head>
 <body>
